@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { useNavigate } from "react-router-dom";
 
 function createData(name, description, hours, address) {
   return { name, description, hours, address };
@@ -16,7 +17,16 @@ const rows = [
   createData('Ice cream sandwich', 237, 9.0, 37),
 ];
 
+
 export default function Listings() {
+
+    const navigate = useNavigate();
+  
+    const routeChange = () =>{ 
+      let path = `/details`; 
+      navigate(path);
+    }
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -30,7 +40,7 @@ export default function Listings() {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow
+            <TableRow onClick={routeChange}
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >

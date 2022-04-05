@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+div > div > header > div {
+  background-color: green;
+}

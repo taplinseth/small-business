@@ -8,7 +8,6 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'column',
         alignItems: 'center',
         fontSize: '10px',
-        // backgroundColor: 'grey'
     },
     cardHold:{
         backgroundColor: 'white',

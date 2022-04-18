@@ -3,48 +3,26 @@ export const state = {
     listings: [
         {
             id: 0,
-            name: "The Vegan Yacht",
+            name: "Thai Kun",
             description: "Resturant",
-            hours: "12pm - 8 pm",
+            hours: "11am - 9pm",
             location: {
-                address: '2000 Southern Oaks Dr, Austin, TX 78745',
-                lat: 30.218826162037093,
-                lng:  -97.79578008529282,
+                address: '11601 Rock Rose Ave, Austin, TX 78758',
+                lat: 30.402434251642788,
+                lng:   -97.72232900489499,
             }
         },
         {
             id: 1,
-            name: "Taquiera Morales",
+            name: "Ramen Tatsu-Ya",
             description: "Resturant",
-            hours: "7 am - 11 pm",
+            hours: "11am - 10pm",
             location: {
-                address: '1415 W William Cannon Dr, Austin, TX 78745',
-                lat: 30.20145222847041,
-                lng:  -97.80032981850188,
+                address: '1234 S Lamar Blvd, Austin, TX 78704',
+                lat: 330.254753276173687,
+                lng:  -97.76317119581324,
             }
         },
-        {
-          id: 2,
-          name: "Austin Art Garage",
-          description: "Art Gallery",
-          hours: "12pm - 6pm",
-          location: {
-              address: '2200 S Lamar Blvd UNIT J, Austin, TX 78704',
-              lat: 30.24808929453527, 
-              lng:  -97.77275263777378,
-          }
-      },
-      {
-          id: 3,
-          name: "Saps Fine Thai Cuisine",
-          description: "Restaurant",
-          hours: "11am - 10pm",
-          location: {
-              address: '2200 S Lamar Blvd UNIT J, Austin, TX 78704',
-              lat: 30.24808929453527, 
-              lng:  -97.77275263777378,
-          }
-      },
     ],
     map: {
         lat: 0,

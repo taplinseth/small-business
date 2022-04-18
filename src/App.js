@@ -1,15 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Router from './Router';
-import Navigation from './components/Navigation';
-import { BrowserRouter } from 'react-router-dom';
-function App() {
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import Router from './Router'
+import Header from './containers/Header'
+import store from './redux/store'
+
+
+const Main = () => (
+  <BrowserRouter>
+    <Header />
+    <Router />
+  </BrowserRouter>
+)
+
+const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <Navigation />
-        <Router />
-      </BrowserRouter>
+      <Provider store={store}>
+        <Main />
+      </Provider>
     </div>
   );
 }
